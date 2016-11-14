@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+
+<title>jQuery返回顶部插件jQuery.toTop演示</title>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<script src="js/jquery.toTop.min.js"></script>
+</head>
+<body style="height:2000px;">
+	
+	<a class="to-top" style="background-color:#ccc;position:fixed;top:300px;right:20px;">TOP</a>
+
+<script>
+$(function(){
+	var opt={
+		autohide: true,	//是否自动隐藏
+         offset: 50,		//下拉多长距离时显示
+         speed: 500,		//滚动持续时间
+         position: true,	//位置是否自动设置
+         right: 15,		//距离左侧边框多远
+         bottom: 30		//距离底部边框多远
+	};
+	$('.to-top').toTop(opt);
+
+});
+</script>
+
+</body>
+</html>
